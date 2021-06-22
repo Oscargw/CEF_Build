@@ -31,5 +31,7 @@
 *.out
 *.app
 
+
 # 大文件
+libcef.dll
 # *.pak
