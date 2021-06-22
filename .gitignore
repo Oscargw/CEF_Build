@@ -34,5 +34,6 @@
 
 # 大文件
 libcef.dll
-cef_sandbox.lib
+Debug/cef_sandbox.lib
+!*Release/cef_sandbox.lib
 # *.pak
