@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CC36F41F-8FBA-3314-9F60-B9FD06D040B2}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ceftests</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\CodeTest_Self\Github\CEF_Build\build\tests\ceftests\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ceftests.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ceftests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\CodeTest_Self\Github\CEF_Build\build\tests\ceftests\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ceftests.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ceftests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\CodeTest_Self\Github\CEF_Build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4244;4481;4512;4701;4702;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;PSAPI_VERSION=1;CEF_USE_SANDBOX;CEF_USE_ATL;_HAS_ITERATOR_DEBUGGING=0;UNIT_TEST;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;PSAPI_VERSION=1;CEF_USE_SANDBOX;CEF_USE_ATL;_HAS_ITERATOR_DEBUGGING=0;UNIT_TEST;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\CodeTest_Self\Github\CEF_Build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CodeTest_Self\Github\CEF_Build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Adding manifest...													</Message>
+      <Command>setlocal
+mt.exe -nologo -manifest "E:/CodeTest_Self/Github/CEF_Build/tests/ceftests/resources/win/ceftests.exe.manifest" "E:/CodeTest_Self/Github/CEF_Build/tests/ceftests/resources/win/compatibility.manifest" -outputresource:"E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Debug/ceftests.exe";#1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different E:/CodeTest_Self/Github/CEF_Build/Debug/chrome_elf.dll E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Debug/chrome_elf.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different E:/CodeTest_Self/Github/CEF_Build/Debug/libcef.dll E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Debug/libcef.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different E:/CodeTest_Self/Github/CEF_Build/Debug/libEGL.dll E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Debug/libEGL.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different E:/CodeTest_Self/Github/CEF_Build/Debug/libGLESv2.dll E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Debug/libGLESv2.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different E:/CodeTest_Self/Github/CEF_Build/Debug/snapshot_blob.bin E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Debug/snapshot_blob.bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different E:/CodeTest_Self/Github/CEF_Build/Debug/v8_context_snapshot.bin E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Debug/v8_context_snapshot.bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_directory E:/CodeTest_Self/Github/CEF_Build/Debug/swiftshader E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Debug/swiftshader
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different E:/CodeTest_Self/Github/CEF_Build/Debug/d3dcompiler_47.dll E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Debug/d3dcompiler_47.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different E:/CodeTest_Self/Github/CEF_Build/Resources/chrome_100_percent.pak E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Debug/chrome_100_percent.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different E:/CodeTest_Self/Github/CEF_Build/Resources/chrome_200_percent.pak E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Debug/chrome_200_percent.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different E:/CodeTest_Self/Github/CEF_Build/Resources/resources.pak E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Debug/resources.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different E:/CodeTest_Self/Github/CEF_Build/Resources/icudtl.dat E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Debug/icudtl.dat
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_directory E:/CodeTest_Self/Github/CEF_Build/Resources/locales E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Debug/locales
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\..\Debug\libcef.lib;..\..\libcef_dll_wrapper\Debug\libcef_dll_wrapper.lib;..\gtest\Debug\cef_gtest.lib;comctl32.lib;rpcrt4.lib;shlwapi.lib;ws2_32.lib;..\..\..\Debug\cef_sandbox.lib;Advapi32.lib;dbghelp.lib;Delayimp.lib;OleAut32.lib;PowrProf.lib;Propsys.lib;psapi.lib;SetupAPI.lib;Shell32.lib;version.lib;wbemuuid.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Debug/ceftests.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Debug/ceftests.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\CodeTest_Self\Github\CEF_Build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4244;4481;4512;4701;4702;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;PSAPI_VERSION=1;CEF_USE_SANDBOX;CEF_USE_ATL;_NDEBUG;UNIT_TEST;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;PSAPI_VERSION=1;CEF_USE_SANDBOX;CEF_USE_ATL;_NDEBUG;UNIT_TEST;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\CodeTest_Self\Github\CEF_Build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CodeTest_Self\Github\CEF_Build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Adding manifest...													</Message>
+      <Command>setlocal
+mt.exe -nologo -manifest "E:/CodeTest_Self/Github/CEF_Build/tests/ceftests/resources/win/ceftests.exe.manifest" "E:/CodeTest_Self/Github/CEF_Build/tests/ceftests/resources/win/compatibility.manifest" -outputresource:"E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Release/ceftests.exe";#1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different E:/CodeTest_Self/Github/CEF_Build/Release/chrome_elf.dll E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Release/chrome_elf.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different E:/CodeTest_Self/Github/CEF_Build/Release/libcef.dll E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Release/libcef.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different E:/CodeTest_Self/Github/CEF_Build/Release/libEGL.dll E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Release/libEGL.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different E:/CodeTest_Self/Github/CEF_Build/Release/libGLESv2.dll E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Release/libGLESv2.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different E:/CodeTest_Self/Github/CEF_Build/Release/snapshot_blob.bin E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Release/snapshot_blob.bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different E:/CodeTest_Self/Github/CEF_Build/Release/v8_context_snapshot.bin E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Release/v8_context_snapshot.bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_directory E:/CodeTest_Self/Github/CEF_Build/Release/swiftshader E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Release/swiftshader
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different E:/CodeTest_Self/Github/CEF_Build/Release/d3dcompiler_47.dll E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Release/d3dcompiler_47.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different E:/CodeTest_Self/Github/CEF_Build/Resources/chrome_100_percent.pak E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Release/chrome_100_percent.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different E:/CodeTest_Self/Github/CEF_Build/Resources/chrome_200_percent.pak E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Release/chrome_200_percent.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different E:/CodeTest_Self/Github/CEF_Build/Resources/resources.pak E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Release/resources.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different E:/CodeTest_Self/Github/CEF_Build/Resources/icudtl.dat E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Release/icudtl.dat
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\CMake\bin\cmake.exe -E copy_directory E:/CodeTest_Self/Github/CEF_Build/Resources/locales E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Release/locales
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\..\Release\libcef.lib;..\..\libcef_dll_wrapper\Release\libcef_dll_wrapper.lib;..\gtest\Release\cef_gtest.lib;comctl32.lib;rpcrt4.lib;shlwapi.lib;ws2_32.lib;..\..\..\Release\cef_sandbox.lib;Advapi32.lib;dbghelp.lib;Delayimp.lib;OleAut32.lib;PowrProf.lib;Propsys.lib;psapi.lib;SetupAPI.lib;Shell32.lib;version.lib;wbemuuid.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Release/ceftests.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/Release/ceftests.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/CodeTest_Self/Github/CEF_Build/tests/ceftests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\CMake\bin\cmake.exe -SE:/CodeTest_Self/Github/CEF_Build -BE:/CodeTest_Self/Github/CEF_Build/build --check-stamp-file E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\CodeTest_Self\Github\CEF_Build\build\tests\ceftests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/CodeTest_Self/Github/CEF_Build/tests/ceftests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\CMake\bin\cmake.exe -SE:/CodeTest_Self/Github/CEF_Build -BE:/CodeTest_Self/Github/CEF_Build/build --check-stamp-file E:/CodeTest_Self/Github/CEF_Build/build/tests/ceftests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\CodeTest_Self\Github\CEF_Build\build\tests\ceftests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\audio_output_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\browser_info_map_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\client_app_delegates.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\command_line_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\cookie_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\cors_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\devtools_message_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\dialog_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\display_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\dom_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\download_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\draggable_regions_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\file_util_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\frame_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\image_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\image_util.cc" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\image_util.h" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\jsdialog_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\life_span_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\message_router_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\navigation_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\os_rendering_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\osr_accessibility_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\osr_display_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\parser_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\plugin_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\preference_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\print_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\process_message_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\request_context_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\request_handler_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\request_unittest.cc" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\resource.h" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\resource_manager_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\resource_request_handler_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\response_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\routing_test_handler.cc" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\routing_test_handler.h" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\run_all_unittests.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\scheme_handler_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\scoped_temp_dir_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\server_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\stream_resource_handler_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\stream_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\string_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\task_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\test_handler.cc" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\test_handler.h" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\test_request.cc" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\test_request.h" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\test_server.cc" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\test_server.h" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\test_server_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\test_suite.cc" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\test_suite.h" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\test_util.cc" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\test_util.h" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\thread_helper.cc" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\thread_helper.h" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\thread_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\tracing_unittest.cc" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\track_callback.h" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\translator_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\urlrequest_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\v8_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\values_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\version_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\waitable_event_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\webui_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\xml_reader_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\zip_reader_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\resource_util_win_idmap.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\extensions\background_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\extensions\chrome_alarms_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\extensions\chrome_storage_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\extensions\chrome_tabs_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\extensions\extension_test_handler.cc" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\extensions\extension_test_handler.h" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\extensions\view_unittest.cc" />
+    <ResourceCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\resources\win\ceftests.rc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\browser\client_app_browser.cc" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\browser\client_app_browser.h" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\browser\extension_util.cc" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\browser\extension_util.h" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\browser\file_util.cc" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\browser\file_util.h" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\browser\geometry_util.cc" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\browser\geometry_util.h" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\browser\main_message_loop.cc" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\browser\main_message_loop.h" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\browser\main_message_loop_external_pump.cc" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\browser\main_message_loop_external_pump.h" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\browser\main_message_loop_std.cc" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\browser\main_message_loop_std.h" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\browser\resource_util.h" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\browser\main_message_loop_external_pump_win.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\browser\resource_util_win.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\browser\util_win.cc" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\browser\util_win.h" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\common\client_app.cc" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\common\client_app.h" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\common\client_app_other.cc" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\common\client_app_other.h" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\common\client_switches.cc" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\common\client_switches.h" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\renderer\client_app_renderer.cc" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\renderer\client_app_renderer.h" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\views\button_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\views\panel_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\views\scroll_view_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\views\test_window_delegate.cc" />
+    <ClInclude Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\views\test_window_delegate.h" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\views\textfield_unittest.cc" />
+    <ClCompile Include="E:\CodeTest_Self\Github\CEF_Build\tests\ceftests\views\window_unittest.cc" />
+    <None Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\resources\osr_test.html">
+    </None>
+    <None Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\resources\pdf.html">
+    </None>
+    <None Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\resources\pdf.pdf">
+    </None>
+    <Image Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\resources\window_icon.1x.png">
+    </Image>
+    <Image Include="E:\CodeTest_Self\Github\CEF_Build\tests\shared\resources\window_icon.2x.png">
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\CodeTest_Self\Github\CEF_Build\build\ZERO_CHECK.vcxproj">
+      <Project>{0A8AED27-91EA-3291-905C-C58E1C998044}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeTest_Self\Github\CEF_Build\build\tests\gtest\cef_gtest.vcxproj">
+      <Project>{C8A4EBD9-452D-374D-8C6E-2125B8AAA064}</Project>
+      <Name>cef_gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CodeTest_Self\Github\CEF_Build\build\libcef_dll_wrapper\libcef_dll_wrapper.vcxproj">
+      <Project>{4087A782-8164-30C4-9719-854516F6704F}</Project>
+      <Name>libcef_dll_wrapper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
