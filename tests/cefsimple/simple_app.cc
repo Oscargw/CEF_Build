@@ -101,8 +101,12 @@ void SimpleApp::OnContextInitialized() {
   // Check if a "--url=" value was provided via the command-line. If so, use
   // that instead of the default URL.
   url = command_line->GetSwitchValue("url");
-  if (url.empty())
-    url = "http://www.google.com";
+  if (url.empty()) 
+  {
+      // url = "http://www.google.com";
+      url = "http://www.baidu.com";
+      url = "https://game-oss.vipthink.cn/video/class/ios.html?or=1&course=s2_v3_03_a";
+  }
 
   if (use_views) {
     // Create the BrowserView.
